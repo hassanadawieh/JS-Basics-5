@@ -14,5 +14,8 @@ document.body.appendChild(result);
 document.body.appendChild(p2);
 
 result.onclick = function () {
-  p2.innerHTML = `Hello ${input.value}`;
+    if(input.value == "Alice" || input.value == "Bob"){
+  p2.innerHTML = `Hello ${input.value}`}else{
+    p2.innerHTML = "Hello stranger"
+  }
 };
